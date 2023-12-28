@@ -1,0 +1,8 @@
+#War Galley
+type = galley
+
+hull_size = 14
+base_cannons = 14
+sail_speed = 10
+
+sprite_level = 2

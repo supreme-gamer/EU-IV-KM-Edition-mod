@@ -1,0 +1,8 @@
+#Trabakul
+type = transport
+
+hull_size = 34
+base_cannons = 18
+sail_speed = 12
+
+sprite_level = 4

@@ -1,0 +1,8 @@
+#Galleas
+type = galley
+
+hull_size = 18
+base_cannons = 18
+sail_speed = 12
+
+sprite_level = 3

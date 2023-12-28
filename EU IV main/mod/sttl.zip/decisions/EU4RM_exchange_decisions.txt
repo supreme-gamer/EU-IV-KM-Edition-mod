@@ -1,0 +1,73 @@
+country_decisions = {
+
+	exchange_adm = {
+		major = no
+		potential = {
+			adm_power = 1
+		}
+		allow =  {
+			adm_power = 100
+		}
+		effect = {
+		country_event  = { id = EU4RM_exchanger_ADM.1 }
+		}
+			
+		ai_will_do = {
+			factor = 0			
+		}
+	}
+	
+	exchange_dip = {
+		major = no
+		potential = {
+			dip_power = 1
+		}
+		allow =  {
+			dip_power = 100
+		}
+		effect = {
+		country_event  = { id = EU4RM_exchanger_DIP.2 }
+		}
+			
+		ai_will_do = {
+			factor = 0			
+		}
+	}
+	
+	exchange_mil = {
+		major = no
+		potential = {
+			mil_power = 1
+		}
+		allow =  {
+			mil_power = 100
+		}
+		effect = {
+		country_event  = { id = EU4RM_exchanger_MIL.3 }
+		}
+			
+		ai_will_do = {
+			factor = 0			
+		}
+	}
+	
+	exchange_gold = {
+		major = no
+		potential = {
+			treasury = 1
+		}
+		allow =  {
+			treasury = 2500
+		}
+		effect = {
+		country_event  = { id = EU4RM_exchanger_GOLD.4 }
+		}
+			
+		ai_will_do = {
+			factor = 0			
+		}
+	}
+
+}
+
+	

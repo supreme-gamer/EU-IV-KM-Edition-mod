@@ -1,0 +1,189 @@
+country_event = {
+	id = EU4RM_exchanger_ADM.1
+	title = "EU4RM_exchanger_ADM_name.1"
+	desc = "EU4RM_exchanger_ADM_desc.1"
+	picture = COMET_SIGHTED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EU4RM_exchanger_ADMtoDIP.1a"
+		add_dip_power = 100
+		add_adm_power = -100
+		add_treasury = -100
+	}
+	option = {
+		name = "EU4RM_exchanger_ADMtoDIP.1b"
+		add_dip_power = 250
+		add_adm_power = -250
+		add_treasury = -250
+	}
+	option = {
+		name = "EU4RM_exchanger_ADMtoMIL.1d"
+		add_mil_power = 100
+		add_adm_power = -100
+		add_treasury = -100
+	}
+	option = {
+		name = "EU4RM_exchanger_ADMtoMIL.1e"
+		add_mil_power = 250
+		add_adm_power = -250
+		add_treasury = -250
+	}
+	option = {
+		name = "EU4RM_exchanger_ADM.1end"
+		
+	}
+}
+
+country_event = {
+	id = EU4RM_exchanger_DIP.2
+	title = "EU4RM_exchanger_DIP_name.2"
+	desc = "EU4RM_exchanger_DIP_desc.2"
+	picture = COMET_SIGHTED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EU4RM_exchanger_DIPtoADM.2a"
+		add_adm_power = 100
+		add_dip_power = -100
+		add_treasury = -100
+	}
+	option = {
+		name = "EU4RM_exchanger_DIPtoADM.2b"
+		add_adm_power = 250
+		add_dip_power = -250
+		add_treasury = -250
+	}
+	option = {
+		name = "EU4RM_exchanger_DIPtoMIL.2d"
+		add_mil_power = 100
+		add_dip_power = -100
+		add_treasury = -100
+	}
+	option = {
+		name = "EU4RM_exchanger_DIPtoMIL.2e"
+		add_mil_power = 250
+		add_dip_power = -250
+		add_treasury = -250
+	}
+	option = {
+		name = "EU4RM_exchanger_DIP.2end"
+		
+	}
+}
+
+country_event = {
+	id = EU4RM_exchanger_MIL.3
+	title = "EU4RM_exchanger_MIL_name.3"
+	desc = "EU4RM_exchanger_MIL_desc.3"
+	picture = COMET_SIGHTED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EU4RM_exchanger_MILtoDIP.3a"
+		add_adm_power = 100
+		add_mil_power = -100
+		add_treasury = -100
+	}
+	option = {
+		name = "EU4RM_exchanger_MILtoDIP.3b"
+		add_adm_power = 250
+		add_mil_power = -250
+		add_treasury = -250
+	}
+	option = {
+		name = "EU4RM_exchanger_MILtoADM.3d"
+		add_dip_power = 100
+		add_mil_power = -100
+		add_treasury = -100
+	}
+	option = {
+		name = "EU4RM_exchanger_MILtoADM.3e"
+		add_dip_power = 250
+		add_mil_power = -250
+		add_treasury = -250
+	}
+	option = {
+		name = "EU4RM_exchanger_MIL.3end"
+		
+	}
+}
+
+country_event = {
+	id = EU4RM_exchanger_GOLD.4
+	title = "EU4RM_exchanger_GOLD_name.4"
+	desc = "EU4RM_exchanger_GOLD_desc.4"
+	picture = COMET_SIGHTED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EU4RM_exchanger_GOLDtoADM.4a"
+		add_adm_power = 100
+		add_treasury = -2500
+	}
+	option = {
+		name = "EU4RM_exchanger_GOLDtoADM.4b"
+		add_adm_power = 250
+		add_treasury = -5000
+	}
+	option = {
+		name = "EU4RM_exchanger_GOLDtoDIP.4d"
+		add_dip_power = 100
+		add_treasury = -2500
+	}
+	option = {
+		name = "EU4RM_exchanger_GOLDtoDIP.4e"
+		add_dip_power = 250
+		add_treasury = -5000
+	}
+	option = {
+		name = "EU4RM_exchanger_GOLDtoMIL.4f"
+		add_mil_power = 100
+		add_treasury = -2500
+	}
+	option = {
+		name = "EU4RM_exchanger_GOLDtoMIL.4g"
+		add_mil_power = 250
+		add_treasury = -5000
+	}
+	option = {
+		name = "EU4RM_exchanger_GOLD.4end"
+		
+	}
+}

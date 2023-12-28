@@ -1,0 +1,8 @@
+#Flute
+type = transport
+
+hull_size = 18
+base_cannons = 10
+sail_speed = 9
+
+sprite_level = 2

@@ -1,0 +1,59 @@
+# Order here is the priority for taking them, if trigger is true.
+
+HAB = {
+	always = yes
+}
+
+MOS = {
+	NOT = { 
+		exists = RUS
+	}
+}
+
+FRA = {
+	always = yes
+}
+
+ETH = {
+	always = yes
+}
+
+VIJ = {
+	always = yes
+}
+
+TUR = {
+	NOT = { 
+		is_year = 1700
+	}
+}
+
+JAP = {
+	always = yes
+}
+
+MAL = {
+	always = yes
+}
+
+RUS = {
+	always = yes
+}
+
+GBR = {
+	always = yes
+}
+
+PLC = {
+	always = yes
+}
+
+SPA = {
+	NOT = { 
+		exists = CAS
+	}
+}
+
+MOR = {
+	always = yes
+}

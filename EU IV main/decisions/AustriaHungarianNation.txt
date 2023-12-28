@@ -1,0 +1,128 @@
+country_decisions = {
+
+		austriahungarian_enforced = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_ahu_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = AHU }
+			OR = {
+				tag = HAB
+				tag = HUN
+				tag = BOH
+			}
+			OR = {
+				ai = no
+				NOT = { exists = HAB }
+				NOT = { exists = HUN }
+				NOT = { exists = BOH }
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 134 # Wien
+				province_id = 153 # Buda
+				province_id = 266 # Praha
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			stability = 3
+			is_at_war = no
+			owns_core_province = 134 # Wien
+			owns_core_province = 153 # Buda
+			owns_core_province = 266 # Praha
+		}
+		effect = {
+			change_tag = AHU
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = {
+						government = monarchy
+					}
+				}
+				change_government = monarchy
+			}
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			carpathia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = AHU
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			134 = {
+				move_capital_effect = yes
+			}
+			134 = {
+			 	add_base_tax = 3
+				add_base_production = 3
+			 	add_base_manpower = 3
+			}
+			153 = {
+			 	add_base_tax = 2
+				add_base_production = 2
+			 	add_base_manpower = 2
+			}
+			266 = {
+			 	add_base_tax = 1
+				add_base_production = 1
+			 	add_base_manpower = 1
+			}
+			if = {
+				limit = {
+					NOT = { primary_culture = austrian }
+					NOT = { accepted_culture = austrian}
+				}
+				add_accepted_culture = austrian
+			}
+			if = {
+				limit = {
+					NOT = { primary_culture = hungarian }
+					NOT = { accepted_culture = hungarian }
+				}
+				add_accepted_culture = hungarian
+			}
+			if = {
+				limit = {
+					NOT = { primary_culture = czech }
+					NOT = { accepted_culture = czech }
+				}
+				add_accepted_culture = czech
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			
+			set_country_flag = formed_ahu_flag
+			add_prestige = 40
+			add_dip_power = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+	
+}
